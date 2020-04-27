@@ -95,4 +95,8 @@ yarn-debug.log*
 !/storage/.keep
 
 .ruby-version
+<<<<<<< Updated upstream
 .idea/
+=======
+.idea/
+>>>>>>> Stashed changes
