@@ -46,6 +46,6 @@ class RecordsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def record_params
-      params.require(:record).permit(:title, :year, :artist_id, :users_id)
+      params.require(:record).permit(:title, :year, :artist_id, :user_id)
     end
 end

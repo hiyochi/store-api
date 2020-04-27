@@ -1,4 +1,4 @@
 class Record < ApplicationRecord
   belongs_to :artist
-  belongs_to :users
+  belongs_to :user
 end
