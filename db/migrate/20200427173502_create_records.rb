@@ -1,10 +1,11 @@
 class CreateRecords < ActiveRecord::Migration[6.0]
   def change
+  	drop_table :records
     create_table :records do |t|
       t.string :title
       t.string :year
-      t.references :artist, null: false, foreign_key: true
-      t.references :user, null: false, foreign_key: true
+      t.references :artist, foreign_key: true
+      t.references :user, foreign_key: true
 
       t.timestamps
     end
