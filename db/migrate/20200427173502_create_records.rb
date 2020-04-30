@@ -1,6 +1,5 @@
 class CreateRecords < ActiveRecord::Migration[6.0]
   def change
-  	drop_table :records
     create_table :records do |t|
       t.string :title
       t.string :year
